@@ -15,25 +15,25 @@
         <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 
 
-        <link rel="stylesheet" href="{{asset('assetss/css/swiper.min.css')}}">
-        <link rel="stylesheet" href="{{asset('assetss/css/animate.css')}}">
-        <link rel="stylesheet" href="{{asset('assetss/css/iconfont.css')}}">
-        <link rel="stylesheet" href="{{asset('assetss/css/font-awesome.min.css')}}">
-        <link rel="stylesheet" href="{{asset('assetss/css/bootstrap.min.css')}}">
-        <link rel="stylesheet" href="{{asset('assetss/css/magnific-popup.css')}}">
-        <link rel="stylesheet" href="{{asset('assetss/css/bootsnav.css')}}">
+        <link rel="stylesheet" href="assets/css/swiper.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/iconfont.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/bootsnav.css">
 
 
 
         <!--For Plugins external css-->
         <!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
         <!--Theme custom css -->
-        <link rel="stylesheet" href="{{ asset('assetss/css/style.css') }}">
+        <link rel="stylesheet" href="assets/css/style.css">
 
         <!--Theme Responsive css-->
-        <link rel="stylesheet" href="{{ asset('assetss/css/responsive.css') }}" />
+        <link rel="stylesheet" href="assets/css/responsive.css" />
 
-        <script src="{{ asset('assetss/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
 
     <body data-spy="scroll" data-target=".navbar-collapse">
@@ -76,8 +76,8 @@
                             <i class="fa fa-bars"></i>
                         </button>
                         <a class="navbar-brand" href="#brand">
-                            <img src="assetss/images/logo.png" class="logo logo-display" alt="">
-                            <img src="assetss/images/footer-logo.png" class="logo logo-scrolled" alt="">
+                            <img src="assets/images/logo.png" class="logo logo-display" alt="">
+                            <img src="assets/images/footer-logo.png" class="logo logo-scrolled" alt="">
                         </a>
 
                     </div>
@@ -118,7 +118,7 @@
                                     <div class="attr_rio text-uppercase">Rio</div>
                                     <div class="attr_sun text-uppercase text-white">Sunny</div>
                                     <div class="attr_lon text-uppercase text-white">London</div>
-                                    <img src="assetss/images/phone01.png" alt="" />
+                                    <img src="assets/images/phone01.png" alt="" />
                                 </div>
                             </div>
 
@@ -230,14 +230,14 @@
                                     <div class="screen01_img text-center">
                                         <div class="attr_cloudy text-white">Cloudy</div>
                                         <div class="attr_deg2 text-white">15 &deg;</div>
-                                        <img src="assetss/images/screen01.png" alt="" />
+                                        <img src="assets/images/screen01.png" alt="" />
                                         <h1 class="cloudy">Cloudy</h1>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="screen01_content m-top-100">
                                         <div class="screen01_content_img ">
-                                            <img src="assetss/images/cloud1.png" alt="" />
+                                            <img src="assets/images/cloud1.png" alt="" />
                                         </div>
                                         <h2 class="m-top-40">When the clouds</h2>
                                         <p class="m-top-20">Variable information on the air humidity, the feeling of the weather,
@@ -258,14 +258,14 @@
                                     <div class="screen02_img text-center">
                                         <div class="attr_sun2 text-white">Cloudy</div>
                                         <div class="attr_deg3 text-white">25 &deg;</div>
-                                        <img src="assetss/images/screen02.png" alt="" />
+                                        <img src="assets/images/screen02.png" alt="" />
                                         <h1 class="sunny">Sunny</h1>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-md-pull-6">
                                     <div class="screen02_content m-top-100">
                                         <div class="screen02_content_img ">
-                                            <img src="assetss/images/sun1.png" alt="" />
+                                            <img src="assets/images/sun1.png" alt="" />
                                         </div>
                                         <h2 class="m-top-40">When the clouds</h2>
                                         <p class="m-top-20">Sometimes the simplest things are the hardest to find.
@@ -286,14 +286,14 @@
                                     <div class="screen03_img text-center">
                                         <div class="attr_rainy2 text-white">Rainy</div>
                                         <div class="attr_deg4 text-white">9 &deg;</div>
-                                        <img src="assetss/images/screen03.png" alt="" />
+                                        <img src="assets/images/screen03.png" alt="" />
                                         <h1 class="rainy">Rainy</h1>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="screen03_content m-top-100">
                                         <div class="screen03_content_img ">
-                                            <img src="assetss/images/rainy1.png" alt="" />
+                                            <img src="assets/images/rainy1.png" alt="" />
                                         </div>
                                         <h2 class="m-top-40">When the rain</h2>
                                         <p class="m-top-20">Sometimes the simplest things are the hardest to find.
@@ -387,14 +387,14 @@
                                         Only relevant and useful information.</h5>
 
                                     <div class="download_app m-top-30">
-                                        <a href=""><img src="assetss/images/appstor.png" alt="" /></a>
-                                        <a href=""><img src="assetss/images/googleplay.png" alt="" /></a>
+                                        <a href=""><img src="assets/images/appstor.png" alt="" /></a>
+                                        <a href=""><img src="assets/images/googleplay.png" alt="" /></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="download_item m-top-70">
-                                    <img class="app_right" src="assetss/images/appdownload1.png" alt="" />
+                                    <img class="app_right" src="assets/images/appdownload1.png" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -431,7 +431,7 @@
                                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-footer">
                                             <i class="fa fa-bars"></i>
                                         </button>
-                                        <a class="navbar-brand" href="#brand"><img src="assetss/images/footer-logo.png" class="logo" alt=""></a>
+                                        <a class="navbar-brand" href="#brand"><img src="assets/images/footer-logo.png" class="logo" alt=""></a>
                                     </div>
                                     <!-- End Header Navigation -->
 
@@ -470,19 +470,19 @@
 
         <!-- JS includes -->
 
-        <script src="assetss/js/vendor/jquery-1.11.2.min.js"></script>
-        <script src="assetss/js/vendor/bootstrap.min.js"></script>
+        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
 
-        <script src="assetss/js/jquery.magnific-popup.js"></script>
-        <script src="assetss/js/jquery.easing.1.3.js"></script>
-        <script src="assetss/js/swiper.min.js"></script>
-        <script src="assetss/js/jquery.collapse.js"></script>
-        <script src="assetss/js/bootsnav.js"></script>
+        <script src="assets/js/jquery.magnific-popup.js"></script>
+        <script src="assets/js/jquery.easing.1.3.js"></script>
+        <script src="assets/js/swiper.min.js"></script>
+        <script src="assets/js/jquery.collapse.js"></script>
+        <script src="assets/js/bootsnav.js"></script>
 
 
 
-        <script src="assetss/js/plugins.js"></script>
-        <script src="assetss/js/main.js"></script>
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/main.js"></script>
 
     </body>
 </html>
