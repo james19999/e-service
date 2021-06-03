@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\FromationCreate;
 use App\Http\Livewire\FormationComponent;
 
 /*
@@ -21,3 +22,4 @@ Route::get('/', function () {
 //Admin
 
 Route::get('/formationcomponent', FormationComponent::class)->name('formationcomponet');
+Route::get('/formationcreate', FromationCreate::class)->name('formationcreate');

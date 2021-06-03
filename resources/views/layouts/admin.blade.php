@@ -1,5 +1,4 @@
-
-<!DOCTYPE html>
+j<!DOCTYPE html>
 <html lang="en">
 
 @include('partials.header')
@@ -55,7 +54,7 @@
                                         </nav>
                                     </div>
                                     <div class="ml-auto d-flex align-items-center secondary-menu text-center">
-                                        <a href="javascript:void(0);" class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Todo list">
+                                        <a href="{{route('formationcreate')}}" class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Todo list">
                                             <i class="fe fe-edit btn btn-icon text-primary"></i>
                                         </a>
                                         <a href="javascript:void(0);" class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Projects">
