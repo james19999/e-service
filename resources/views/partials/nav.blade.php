@@ -32,10 +32,10 @@
                                                 <h4>UI Kit</h4>
                                                 <ul>
                                                     <li class="nav-link">
-                                                        <a href="{{ route('formationcomponet') }}">Formations</a>
+                                                        <a href="{{ route('formationcomponet') }}">FORMATION</a>
                                                     </li>
                                                     <li class="nav-link">
-                                                        <a href="ui-button.html">Buttons</a>
+                                                        <a href="{{ route('videocomponent') }}">VIDEO</a>
                                                     </li>
                                                     <li class="nav-link">
                                                         <a href="ui-cards.html">Cards</a>

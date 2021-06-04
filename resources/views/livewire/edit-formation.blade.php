@@ -2,9 +2,9 @@
     <div class="col-xl-12">
 
          <div>
-             @if (session()->has('messages'))
+             @if (session()->has('sms'))
                <div class="alert alert-success">
-                  {{ session('message') }}
+                  {{ session('sms') }}
                </div>
              @endif
         </div> <br>
@@ -17,7 +17,7 @@
             </div>
 
             <div class="card-body">
-                <form wire:submit.prevent="submit">
+                <form wire:submit.prevent="modification">
                     @csrf
                     <div class="form-group">
                         <label for="name">Nom: {{ $nom }}</label>
@@ -34,13 +34,14 @@
                     <div class="form-group">
                         <label for="name">Prix: {{ $prix }}</label>
                         <input type="text" class="form-control" min="0"  name="prix" wire:model="prix" placeholder="Entrer le prix de la formation">
-                        @error('prix') <span style="color:red" class="error">{{ $message }}</span> @enderror
+                         @error('prix') <span style="color:red" class="error">{{ $message }}</span> @enderror
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Enregistrer</button>
-                    <button type="submit" class="btn btn-info">Annuler</button>
+                         <button type="submit" class="btn btn-primary">Enregistrer</button>
+                         <button type="submit" class="btn btn-info">Annuler</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
+

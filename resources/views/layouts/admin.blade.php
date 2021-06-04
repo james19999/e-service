@@ -57,7 +57,7 @@ j<!DOCTYPE html>
                                         <a href="{{route('formationcreate')}}" class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Todo list">
                                             <i class="fe fe-edit btn btn-icon text-primary"></i>
                                         </a>
-                                        <a href="javascript:void(0);" class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Projects">
+                                        <a href="{{ route('videocreate') }}" class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Projects">
                                             <i class="fa fa-lightbulb-o btn btn-icon text-success"></i>
                                         </a>
                                         <a href="javascript:void(0);" class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Task">

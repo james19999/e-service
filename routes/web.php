@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Livewire\VideoForm;
+use App\Http\Livewire\EditFormation;
+use App\Http\Livewire\VideoComponent;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\FromationCreate;
 use App\Http\Livewire\FormationComponent;
@@ -23,3 +26,6 @@ Route::get('/', function () {
 
 Route::get('/formationcomponent', FormationComponent::class)->name('formationcomponet');
 Route::get('/formationcreate', FromationCreate::class)->name('formationcreate');
+Route::get('/formation/{formation_id}',EditFormation::class)->name('formationedit');
+Route::get('/videocomponet', VideoComponent::class)->name('videocomponent');
+Route::get('/videocreate', VideoForm::class)->name('videocreate');

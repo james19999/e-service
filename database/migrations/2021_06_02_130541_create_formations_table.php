@@ -32,3 +32,4 @@ class CreateFormationsTable extends Migration
         Schema::dropIfExists('formations');
     }
 }
+
