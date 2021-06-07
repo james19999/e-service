@@ -29,3 +29,6 @@ Route::get('/formationcreate', FromationCreate::class)->name('formationcreate');
 Route::get('/formation/{formation_id}',EditFormation::class)->name('formationedit');
 Route::get('/videocomponet', VideoComponent::class)->name('videocomponent');
 Route::get('/videocreate', VideoForm::class)->name('videocreate');
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');

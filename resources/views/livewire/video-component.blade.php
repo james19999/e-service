@@ -39,7 +39,7 @@
 
                         <div class="mt-xxs-0 mt-3 btn-group btn-group-toggle" data-toggle="buttons">
                             <input style="margin-right: 5%"  wire:model="search"  type="search" class="form-control " placeholder="Recherche">
-                             
+                               {{ $Videos->links() }}
                         </div>     
                        
                     </div>
@@ -48,6 +48,7 @@
                     
                
                        <div class="card-body py-0 table-responsive">
+                           
                              <table class="table clients-contant-table mb-0">
                                  <thead>
                                          <tr>
@@ -75,7 +76,7 @@
                                                  <td><a href="javascript:void(0)"></a><span></span></>
                                              <td>
                                                   <a href="" class="btn btn-icon btn-outline-primary btn-round mr-2 mb-2 mb-sm-0 "><i class="ti ti-pencil"></i></a>
-                                                  <a href="javascript:void(0)"  onclick="return confirm('Voulez-vous supprimer ?')||event.stopImmediatePropagation()"  class="btn btn-icon btn-outline-danger btn-round"><i class="ti ti-close"></i></a>
+                                                  <a href="javascript:void(0)" wire:click="delete('{{ $video->id }}')"  onclick="return confirm('Voulez-vous supprimer ?')||event.stopImmediatePropagation()"  class="btn btn-icon btn-outline-danger btn-round"><i class="ti ti-close"></i></a>
                                             </td>
                                          </tr> 
                                    @endforeach
