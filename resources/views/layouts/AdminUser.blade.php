@@ -19,13 +19,13 @@
             <!-- end pre-loader -->
             <!-- begin app-header -->
             <header class="app-header top-bar">
-              @include('partials.nav')
+              @include('partials._nav')
             </header>
             <!-- end app-header -->
             <!-- begin app-container -->
             <div class="app-container">
 
-                @include('partials.sidebar')
+                @include('partials._sidebar')
 
                 <!-- end app-navbar -->
                 <!-- begin app-main -->
@@ -38,7 +38,7 @@
                                 <!-- begin page title -->
                                 <div class="d-block d-lg-flex flex-nowrap align-items-center">
                                     <div class="page-title mr-4 pr-4 border-right">
-                                        <h1>Tableau de bord</h1>
+                                        <h1>Dashboard</h1>
                                     </div>
                                     <div class="breadcrumb-bar align-items-center">
                                         <nav>
@@ -47,17 +47,17 @@
                                                     <a href="index.html"><i class="ti ti-home"></i></a>
                                                 </li>
                                                 <li class="breadcrumb-item">
-                                                    Tableau de bord
+                                                    Dashboard
                                                 </li>
                                                 <li class="breadcrumb-item active text-primary" aria-current="page">Default</li>
                                             </ol>
                                         </nav>
                                     </div>
-                                    <div class="ml-auto d-flex align-items-center secondary-menu text-center">
-                                        <a href="" class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Todo list">
+                                    {{-- <div class="ml-auto d-flex align-items-center secondary-menu text-center">
+                                        <a href="{{route('formationcreate')}}" class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Todo list">
                                             <i class="fe fe-edit btn btn-icon text-primary"></i>
                                         </a>
-                                        <a href=" " class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Projects">
+                                        <a href="{{ route('videocreate') }}" class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Projects">
                                             <i class="fa fa-lightbulb-o btn btn-icon text-success"></i>
                                         </a>
                                         <a href="javascript:void(0);" class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Task">
@@ -69,7 +69,7 @@
                                         <a href="javascript:void(0);" class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Analytics">
                                             <i class="fa fa-bar-chart-o btn btn-icon text-danger"></i>
                                         </a>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <!-- end page title -->
                             </div>

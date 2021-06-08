@@ -90,6 +90,7 @@
                             <li><a href="#features">Features</a></li>
                             <li><a href="#reviews">Reviews</a></li>
                             <li><a href="#download">Download</a></li>
+                            <li><a href="#download">Connexion</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div>
@@ -381,14 +382,55 @@
                         <div class="main_download ">
                             <div class="col-md-6">
                                 <div class="download_item roomy-100">
-                                    <h2 class="text-white">How Download the app?</h2>
-                                    <h5 class="text-white m-top-20">Just download the app from the store.
-                                        Simple, nice and user-friendly application of theweather.
-                                        Only relevant and useful information.</h5>
+                                  <x-guest-layout>
+    
+        <x-slot name="logo">
+            <x-jet-authentication-card-logo />
+        </x-slot>
 
-                                    <div class="download_app m-top-30">
-                                        <a href=""><img src="assetss/images/appstor.png" alt="" /></a>
-                                        <a href=""><img src="assetss/images/googleplay.png" alt="" /></a>
+        <x-jet-validation-errors class="mb-4" />
+
+        @if (session('status'))
+            <div class="mb-4 font-medium text-sm text-green-600">
+                {{ session('status') }}
+            </div>
+        @endif
+
+        <form method="POST" action="{{ route('login') }}">
+            @csrf
+
+            <div>
+                <x-jet-label for="email" value="{{ __('Email') }}" />
+                <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
+            </div>
+
+            <div class="mt-4">
+                <x-jet-label for="password" value="{{ __('Password') }}" />
+                <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" />
+            </div>
+
+            <div class="block mt-4">
+                <label for="remember_me" class="flex items-center">
+                    <x-jet-checkbox id="remember_me" name="remember" />
+                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
+                </label>
+            </div>
+
+            <div class="flex items-center justify-end mt-4">
+                @if (Route::has('password.request'))
+                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
+                        {{ __('Forgot your password?') }}
+                    </a>
+                @endif
+
+                <x-jet-button class="ml-4">
+                    {{ __('Log in') }}
+                </x-jet-button>
+            </div>
+        </form>
+    
+</x-guest-layout>
+
                                     </div>
                                 </div>
                             </div>

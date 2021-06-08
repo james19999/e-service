@@ -5,7 +5,9 @@ use App\Http\Livewire\EditFormation;
 use App\Http\Livewire\VideoComponent;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\FromationCreate;
+use App\Http\Livewire\FormationDetails;
 use App\Http\Livewire\FormationComponent;
+use App\Http\Livewire\FormationComponentUser;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,12 +25,23 @@ Route::get('/', function () {
 });
 
 //Admin
+Route::middleware(['auth:sanctum', 'Authmiddleware','verified'])->group(function () {
+    
+    Route::get('/formationcomponent', FormationComponent::class)->name('formationcomponet');
+    Route::get('/formationcreate', FromationCreate::class)->name('formationcreate');
+    Route::get('/formation/{formation_id}',EditFormation::class)->name('formationedit');
+    Route::get('/videocomponet', VideoComponent::class)->name('videocomponent');
+    Route::get('/videocreate', VideoForm::class)->name('videocreate');
+  
+   
+});
 
-Route::get('/formationcomponent', FormationComponent::class)->name('formationcomponet');
-Route::get('/formationcreate', FromationCreate::class)->name('formationcreate');
-Route::get('/formation/{formation_id}',EditFormation::class)->name('formationedit');
-Route::get('/videocomponet', VideoComponent::class)->name('videocomponent');
-Route::get('/videocreate', VideoForm::class)->name('videocreate');
+  //admin user
+  Route::middleware(['auth'])->group(function () {
+  Route::get('formationdetails/{formation_id}', FormationDetails::class)->name('formationdetails');
+  Route::get('formationcomponentuser', FormationComponentUser::class)->name('formationcomponentuser');  
+  });
+ 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
