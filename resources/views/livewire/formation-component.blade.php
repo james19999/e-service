@@ -53,6 +53,8 @@
                                             <th scope="col">Nom</th>
                                             <th scope="col">Description</th>
                                             <th scope="col">Prix</th>
+                                            <th scope="col">image</th>
+                                            <th scope="col">statut</th>
                                             <th scope="col">Edit & Delete</th>
                                          </tr>
                                  </thead>
@@ -71,6 +73,15 @@
                                                  <td>{{ $Formation->nom }}</td>
                                                  <td>{{ $Formation->description }}</td>
                                                  <td><a href="javascript:void(0)"></a><span>{{ $Formation->prix }}</span></td>
+                                                 <td><img src="{{ url('storage/image/'.$Formation->image) }}"  class="img-fluid" style="width:50px; height:50px"></td>
+                                                 <td>
+                                                 @if ($Formation->statut == false)
+                                                     <a href=""  wire:click.prevent="btns('{{$Formation->id}}')" class="dot bg-danger"></a><span>Non payer</span>
+                                                 @else
+                                                     <a href=""wire:click.prevent="btns('{{$Formation->id}}')" class="dot"></a><span>Payer</span>
+                                                 @endif
+                                                 </td>
+                                              
                                              <td>
                                                   <a href="{{ route('formationedit',$Formation) }}" class="btn btn-icon btn-outline-primary btn-round mr-2 mb-2 mb-sm-0 "><i class="ti ti-pencil"></i></a>
                                                   <a href="javascript:void(0)" wire:click="delete('{{ $Formation->id }}')" onclick="return confirm('Voulez-vous supprimer ?')||event.stopImmediatePropagation()"  class="btn btn-icon btn-outline-danger btn-round"><i class="ti ti-close"></i></a>

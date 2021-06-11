@@ -16,7 +16,16 @@ class FormationComponent extends Component
 
     protected $paginationTheme = 'bootstrap';
 
+           public function btns($id){
+                $Formation=Formation::find($id);
 
+                if ($Formation->statut==false) {
+                    $Formation->statut=true;
+                } else {
+                    $Formation->statut=false;
+                }
+                    $Formation->save();
+               }
     
             public function delete($id)
                 {

@@ -18,6 +18,8 @@ class CreateFormationsTable extends Migration
             $table->string('nom');
             $table->string('description');
             $table->integer('prix');
+            $table->string('image');
+            $table->boolean('statut')->default(false);
             $table->timestamps();
         });
     }

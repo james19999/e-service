@@ -14,6 +14,7 @@ class Formation extends Model
         'nom',
         'description',
         'prix',
+        'image',
     ];
 
 
